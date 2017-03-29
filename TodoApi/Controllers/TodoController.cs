@@ -46,7 +46,7 @@ namespace TodoApi.Controllers
         [HttpPost]
         public IActionResult Create([FromBody] TodoItem item)
         {
-            if (item == null)
+            if (item == null) 
             {
                 return BadRequest();
             }
